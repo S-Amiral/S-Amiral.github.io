@@ -42,8 +42,7 @@ body{
 	}
 	#main{
 		width: 60vw;
-		height: 30vh;
-		margin: 17vh 0 0 20vw;
+		margin: 10vh 0 5vh 20vw;
 		border-top: 3px solid green;
 		border-bottom: 3px solid green;
 		color: white;
@@ -96,7 +95,7 @@ body{
 
 	footer{
 		width: 100%;
-		position: fixed;
+		position: relative;
 		bottom :0;
 		text-align: center;
 		color: white;
@@ -138,7 +137,6 @@ body{
 	}
 	#main{
 		width: 90vw;
-		height: 65vh;
 		margin: 10vh 0 0 5vw;
 		border-top: 3px solid green;
 		border-bottom: 3px solid green;
@@ -197,13 +195,20 @@ body{
 
 	footer{
 		width: 100%;
-		position: fixed;
+		position: relative;
 		bottom :0;
 		text-align: center;
 		color: white;
 	 	font-family:"Consolas";
 	 	font-size: 3vh;
 	}
+}
+
+.avatar{
+	margin: 1vh 2vw 1vh 0;
+	height: 60px;
+	width: 60px;
+	vertical-align: middle;
 }
 
 input[type=submit]{
