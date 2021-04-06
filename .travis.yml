@@ -1,0 +1,23 @@
+language: php
+php:
+    - '7.0'
+
+branches:
+  only:
+  - build
+
+script:
+    - mkdir -p build
+    - php index.php > build/index.html
+    - cp .travis.yml build/
+    - cp -r design build/
+    - cp style.css build/
+    - cp LICENSE build/
+    - cp README.md build/
+
+after_success:
+  - >
+    test "${TRAVIS_PULL_REQUEST}" = "false" \
+      && test "${TRAVIS_BRANCH}" = "build" \
+      && bash deploy.sh \
+      || echo ":-)"
